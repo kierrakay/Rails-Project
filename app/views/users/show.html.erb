@@ -1,0 +1,9 @@
+<h1>Welcome <%= @user.username %></h1>
+<p>Reservations: <%= @user.reservations %></p>
+
+<% if @user.admin %>
+<p>ADMIN</p>
+<% end %>
+<%= link_to "See hostels", hostels_path %>
+<%= link_to "reservations", reservations_path %>
+<%# <%= link_to 'Edit', edit_user_path(@user) %> 
